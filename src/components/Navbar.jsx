@@ -10,7 +10,7 @@ const Navbar = () => {
   };
   return (
     <div className="flex justify-between items-center h-24  bg-neutral-700 mx-auto px-3 text-white">
-      <h1 className="w-full text-3xl font-bold text-[#00df9a]">Logo</h1>
+      <h1 className="w-full text-3xl font-bold text-[#00df9a]">MCARS</h1>
       <ul className="hidden md:flex">
         <li className="p-4">Home</li>
         <li className="p-4">Vehicles</li>
@@ -26,7 +26,7 @@ const Navbar = () => {
             : "ease-in-out duration-500 fixed left-[-100%]"
         }
       >
-        <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">Logo</h1>
+        <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">MCARS</h1>
         <li className="p-4">Home</li>
         <li className="p-4">Vehicles</li>
         <li className="p-4">Contact Us</li>
