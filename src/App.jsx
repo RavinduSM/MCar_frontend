@@ -3,14 +3,12 @@ import "./index.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Homes/Home";
 import Navbar from "./components/Navbar";
-import Vehicle from "./Pages/Vehicle/Vehicle";
 
 const App = () => {
   return (
     <div className="">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/vehicles" element={<Vehicle />} />
       </Routes>
     </div>
   );
