@@ -9,8 +9,8 @@ import Navbar from "../../components/Navbar";
 const Home = () => {
   return (
     <div>
-      <Navbar classname="z-10" />
-      <Hero classname="-z-10" />
+      <Navbar />
+      <Hero />
       <About />
       <Services />
       <Footer />
