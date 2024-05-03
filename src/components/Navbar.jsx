@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [nav, setNav] = useState(false);
+  const handleNav = () => {
+    setNav(!nav);
+  };
   return (
     <div className="flex justify-between items-center h-24  bg-neutral-700 mx-auto px-3 text-white">
       <h1 className="w-full text-3xl font-bold text-[#00df9a]">Logo</h1>
