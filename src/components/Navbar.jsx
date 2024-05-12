@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import {
-  AiOutlineClose,
-  AiOutlineLogin,
-  AiOutlineMenu,
-  AiOutlineUserAdd,
-} from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
