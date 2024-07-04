@@ -1,15 +1,14 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
+import VehicleTable from "./VehicleTable";
 
-import VehicleListing from "./VehicleListing";
-
-const VehiclePage = () => {
+const Dashboard = () => {
   return (
     <div>
       <Navbar />
-      <VehicleListing />
+      <VehicleTable />
     </div>
   );
 };
 
-export default VehiclePage;
+export default Dashboard;

@@ -1,29 +1,40 @@
 import React from "react";
 import car from "../assets/car-1890494_1280.jpg";
+import { FaHeart, FaEye } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 
-const VehicleCard = () => {
+const VehicleCard = (props) => {
+  const { vehicles } = props;
   return (
-    <div className="w-[257px] h-[355px] flex flex-col relative hover:shadow-xl transition-shadow ">
-      <div className="flex justify-between absolute p-[10px] items-center w-[100%]  ">
-        {/* product Img */}
-        <div className="bg-gray-300 flex w-[100%] h-[270px]  p-[10px] justify-center items-center ">
-          <img
-            src={car}
-            alt={Image}
-            className="max-w-[175px] max-h-[165px] object-cover"
-          />
+    <div>
+      <div className="relative flex flex-col w-full overflow-hidden rounded-lg shadow-xl group">
+        <div>
+          <img src={car} alt="" className=" w-full md:h-[250px] h-[150px]" />
         </div>
-        {/* details */}
-        <div className="flex flex-col gap-[5px] p-[5px]">
-          {/* title */}
-          <div>
-            <Link to={""}>
-              <span className="font-[500] text-[16px] hover:underline cursor-pointer">
-                Testing
-              </span>
-            </Link>
-          </div>
+
+        <div className="flex justify-between px-2 py-3 mx-1 duration-300 bg-white rounded-full group-hover:-mt-6 md:mx-6 group-hover:md:-mt-7 md:px-6">
+          <FaHeart
+            size={25}
+            className="duration-200 cursor-pointer hover:scale-110"
+          />
+          <Link to={`/vehicles/${vehicles._id}`}>
+            <FaEye
+              size={25}
+              className="duration-200 cursor-pointer hover:scale-110"
+            />
+          </Link>
+        </div>
+
+        <div className="text-start">
+          <p className="py-2 mx-3 text-lg font-bold md:mx-8">
+            {vehicles.vehicleBrand} {vehicles.vehicleModel}
+          </p>
+        </div>
+        <div className="flex">
+          <p className="py-2  mx-3 text-xl font-bold md:mx-8">
+            Rs.{vehicles.price}
+          </p>
         </div>
       </div>
     </div>

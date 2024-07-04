@@ -18,6 +18,9 @@ import Home from "./Pages/Homes/Home.jsx";
 import Login from "./Pages/Auth/Login.jsx";
 import Register from "./Pages/Auth/Register.jsx";
 import VehiclePage from "./Pages/Vehicles/VehiclePage.jsx";
+import VehicleView from "./Pages/Vehicles/SingleVehicleView.jsx";
+import Dashboard from "./Pages/Dashboard/Dashboard.jsx";
+import AddVehicle from "./Pages/Dashboard/AddVehicle.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -26,6 +29,9 @@ const router = createBrowserRouter(
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/vehicles" element={<VehiclePage />} />
+      <Route path="/vehicles/:id" element={<VehicleView />} />
+      <Route path="/Dashboard" element={<Dashboard />} />
+      <Route path="/addVehicle" element={<AddVehicle />} />
     </Route>
   )
 );

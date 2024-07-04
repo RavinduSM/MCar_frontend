@@ -49,7 +49,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="shadow-md w-full fixed top-0 left-0">
+    <div className="shadow-md w-full static top-0 left-0">
       <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
         <div
           className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
@@ -125,7 +125,7 @@ const Navbar = () => {
                   <>
                     <li>
                       <Link
-                        to="/admin/movies/dashboard"
+                        to="/dashboard"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
                         Dashboard
